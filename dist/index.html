@@ -7,6 +7,7 @@
     <title>weather</title>
 </head>
 <body>
+    <div class="container" id="container">
     <div class="header">
         <div class="iconHeader"></div>
         <form action="#" class="form">
@@ -16,12 +17,16 @@
     </div>
     <div class="content">
         <div class="current">
-            <div class="currentLocation"></div>
-            <div class="currentWeather"></div>
-            <div class="currentCelcius"></div>
+            <div class="currentContainer" id="currentContainer">
+            <div class="currentLocation" id="currentLocation"></div>
+            <!-- <div class="currentWeather"></div> -->
+            <img src="" alt="" class="currentWeather" id="currentWeather">
+            <div class="currentCelcius" id="currentCelcius"></div>
         </div>
-        <div class="forecast">
         </div>
+        <div class="forecast" id="forecast">
+        </div>
+    </div>
     </div>
     <script src="main.js"></script>
 </body>
