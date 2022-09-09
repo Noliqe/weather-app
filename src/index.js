@@ -65,8 +65,9 @@ async function displayForecast(forecastData) {
       // kelvin to celcius
       const celcius = forecastData.list[count].main.temp - 273.15;
       const forecastIconCode = await forecastData.list[count].weather[0].icon;
+      const iconUrl = "http://openweathermap.org/img/wn/" + forecastIconCode + "@2x.png"
       const forecastIcon = await fetch(
-        "http://openweathermap.org/img/wn/" + forecastIconCode + "@2x.png",
+        iconUrl,
         { mode: "cors" }
       );
 
