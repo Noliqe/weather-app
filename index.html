@@ -1,33 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>weather</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="container" id="container">
-    <div class="header">
+      <div class="header">
         <div class="iconHeader"></div>
         <form action="#" class="form">
-            <input type="text" placeholder="search location.." class="searchBar">
-            <input type="button" value="search" class="searchButton">
+          <input
+            type="text"
+            placeholder="search location.."
+            class="searchBar"
+          />
+          <input type="button" value="search" class="searchButton" />
         </form>
-    </div>
-    <div class="content">
+      </div>
+      <div class="content">
         <div class="current">
-            <div class="currentContainer" id="currentContainer">
+          <div class="currentContainer" id="currentContainer">
             <div class="currentLocation" id="currentLocation"></div>
             <!-- <div class="currentWeather"></div> -->
-            <img src="" alt="" class="currentWeather" id="currentWeather">
+            <img src="" alt="" class="currentWeather" id="currentWeather" />
             <div class="currentCelcius" id="currentCelcius"></div>
+          </div>
         </div>
-        </div>
-        <div class="forecast" id="forecast">
-        </div>
-    </div>
+        <div class="forecast" id="forecast"></div>
+      </div>
     </div>
     <script src="main.js"></script>
-</body>
+  </body>
 </html>
